@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事件委托（事件代理）</title>
+</head>
+<body>
+    <ul id="ul">
+        <li id="add">添加</li>
+        <li id="remove">删除</li>
+        <li id="move">移动</li>
+        <li id="select">选择</li>
+        <li id="moren">默认</li>
+    </ul>
+</body>
+</html>
+<script>
+    var oUl=document.getElementById('ul');
+    var oLi=oUl.getElementsByTagName('li');
+
+    oUl.onclick=function(event){
+        var event=event||window.event;  
+        var target=event.target||event.srcElement;   // 标准模式 | IE模式
+
+        if(target.nodeName.toLowerCase()==='li'){   // event.target.nodeName
+            switch(target.id){   // target.id
+                case 'add':
+                   alert('添加');
+                   break;
+                case 'remove':
+                    alert('删除');
+                    break;
+                case 'move':
+                    alert('移动');
+                    break;
+                case 'select':
+                    alert('选择');
+                    break;
+                default:
+                    alert('默认');
+                    break;
+           }
+        }
+    }
+</script>
