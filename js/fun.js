@@ -16,6 +16,7 @@ function add(...args) {
 function currying(fn) {
     let args = [];
     return function temp(...newArgs) {
+        console.log('newArgs:' + [...newArgs]);
         if (newArgs.length) {
             args = [
                 ...args,

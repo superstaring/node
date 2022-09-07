@@ -14,7 +14,7 @@ a();
 // 3
 // typeError: a is not a function 
 
-// var和函数声明均有变量提升
+// var和函数声明均有变量提升    var a; function a() {alert(10);};
 
 
 function test(m) {
