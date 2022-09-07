@@ -20,7 +20,6 @@ function bubbleSort(arr) {
 bubbleSort([4, 1, 8, 0, 10, 20]);  // [ 0, 1, 4, 8, 10, 20 ]
 
 
-
 function bubbleSort1(arr) {
     let i = arr.length - 1;
 
