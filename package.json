@@ -1,0 +1,23 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "events.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superstaring/node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/superstaring/node/issues"
+  },
+  "homepage": "https://github.com/superstaring/node#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mockjs": "^1.1.0"
+  }
+}
