@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="class"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
+    <title>class</title>
+  </head>
+  <body>
+    <div id="root">
+      <button>点击</button>
+    </div>
+    <script>
+      // class 类
+      var that;
+      class Star{
+        constructor(uname, age){
+            that = this;
+            this.uname = uname;
+            this.age = age;
+            // 点击事件
+            this.btn = document.querySelector('button');
+            this.btn.onclick = this.sing.bind(this);  // 不立即执行，点击时才执行
+        }
+        sing(){
+            // 这个sing方法里面的this，指向的是btn这个按钮，因为btn调用了这个函数
+            console.log(this.uname + ':' + this.age);
+            console.log(that.uname + ' ' + this.age);
+        }
+      }
+
+      var ldh = new Star('js', 'class');
+    </script>
+  </body>
+</html>

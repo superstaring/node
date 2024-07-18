@@ -1,4 +1,5 @@
 // 手写Promise的实现
+// queueMicrotask执行微任务
 
 const PROMISE_STATE = {
     PENDING: 0,
